@@ -8,7 +8,7 @@ This is not supported or developed by New Relic.
 
     go get -u github.com/hytm/nri-linux-installer
 
-    You can also use the binary from this repository directly.
+You can also use the binary from this repository directly.
 
 ## Usage
 
