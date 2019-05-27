@@ -9,7 +9,7 @@ import (
 
 var (
 	tmpFileName = "./nri-linux-installer-tmp"
-	m           = flag.String("m", "R", "Installation mode for the Agent: (R)oot, (P)riviledged, (U)npriviledged. Default set to root")
+	m           = flag.String("m", "R", "Installation mode for the Agent: (R)oot, (P)rivileged, (U)nprivileged. Default set to root")
 	msg         = "Starting installation as"
 	mode        string
 	modeName    string
@@ -33,7 +33,7 @@ func main() {
 	case "R":
 		modeName = "root"
 	case "P":
-		modeName = "PRIVILEDGED"
+		modeName = "PRIVILEGED"
 		nria = `NRIA_MODE="PRIVILEGED"`
 	case "U":
 		modeName = "UNPRIVILEGED"
@@ -79,7 +79,7 @@ func main() {
 func usageAndExit() {
 	usage := `Usage: nri-linux-installer [options...] <license key>
 Options:	
-   -mode  Installation mode (default as root). Use R for root, P for Priviledged and U for Unpriviledged.
+   -mode  Installation mode (default as root). Use R for root, P for Privileged and U for Unprivileged.
 `
 	fmt.Fprintf(os.Stderr, usage)
 	os.Exit(1)
